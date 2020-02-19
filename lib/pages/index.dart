@@ -15,14 +15,15 @@ class _MyHomePageState extends State<MyHomePage> {
   //底部导航切换
   final List<BottomNavigationBarItem> _bottonTabs = [
     BottomNavigationBarItem(icon: Icon(Icons.home), title: Text("首页")),
-    BottomNavigationBarItem(icon: Icon(Icons.search), title: Text("分类")),
+    BottomNavigationBarItem(icon: Icon(Icons.search), title: Text("搜索")),
+    BottomNavigationBarItem(icon: Icon(Icons.info), title: Text("资讯")),
     BottomNavigationBarItem(
-        icon: Icon(Icons.shopping_cart), title: Text("购物车")),
-    BottomNavigationBarItem(
-        icon: Icon(Icons.perm_identity), title: Text("会员中心")),
+        icon: Icon(Icons.account_circle), title: Text("我的")),
   ];
+  //顶部
+
   //底部导航页面切换
-  final List _TabBodies = [
+  final List<Widget> _TabBodies = [
     HomePage(),
     SearchPage(),
     ShoppingPage(),
@@ -34,10 +35,6 @@ class _MyHomePageState extends State<MyHomePage> {
   Widget build(BuildContext context) {
     return Container(
       child: Scaffold(
-          appBar: AppBar(
-            //顶部
-            title: Text("百姓生活+"),
-          ),
           //内容部分
           body: this._TabBodies[_currentIndex],
           //底部导航

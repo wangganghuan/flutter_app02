@@ -1,5 +1,6 @@
-//购物车
+//资讯
 import 'package:flutter/material.dart';
+import 'package:flutter_app02/pages/index/member/home/info/index.dart';
 
 class ShoppingPage extends StatefulWidget {
   ShoppingPage({Key key}) : super(key: key);
@@ -11,8 +12,26 @@ class ShoppingPage extends StatefulWidget {
 class _ShoppingPageState extends State<ShoppingPage> {
   @override
   Widget build(BuildContext context) {
-    return Container(
-      child: Text("购物车"),
-    );
+    return Scaffold(
+        appBar: AppBar(
+          title: Text("资讯"),
+        ),
+        body: ListView(
+          padding: EdgeInsets.only(top: 10),
+          children: <Widget>[
+            Container(
+              child: Info(showTitle: false),
+            ),
+            Container(
+              child: Info(showTitle: false),
+            ),
+            Container(
+              child: Info(showTitle: false),
+            ),
+            Container(
+              child: Info(showTitle: false),
+            ),
+          ],
+        ));
   }
 }

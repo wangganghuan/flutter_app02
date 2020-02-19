@@ -1,4 +1,4 @@
-//会员中心
+//我的
 import 'package:flutter/material.dart';
 
 class MemberPage extends StatefulWidget {
@@ -11,8 +11,22 @@ class MemberPage extends StatefulWidget {
 class _MemberPageState extends State<MemberPage> {
   @override
   Widget build(BuildContext context) {
-    return Container(
-      child: Text("会员中心"),
+    return Scaffold(
+      appBar: AppBar(
+        title: Text("我的"),
+      ),
+      body: Container(
+        child: Column(
+          children: <Widget>[
+            RaisedButton(
+              child: Text("登陆"),
+              onPressed: () {
+                Navigator.pushNamed(context, "/log");
+              },
+            )
+          ],
+        ),
+      ),
     );
   }
 }
