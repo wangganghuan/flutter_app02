@@ -1,4 +1,4 @@
-//轮播图下面内容
+//首页---  轮播图下面内容
 import 'package:flutter/material.dart';
 import 'package:flutter_app02/commonality/common_lmage.dart';
 import './index_navigatcontent.dart';

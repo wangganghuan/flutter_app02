@@ -1,5 +1,6 @@
 //搜索
 import 'package:flutter/material.dart';
+import 'package:flutter_app02/commonality/common_input/index.dart';
 import 'package:flutter_app02/pages/index/member/search/tab_search/content.dart';
 import 'package:flutter_app02/pages/index/member/search/tab_search/dataList.dart';
 
@@ -15,7 +16,14 @@ class _SearchPageState extends State<SearchPage> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text("搜索"),
+        title: ConmminInput(
+          showLoaction: true,
+          showMap: true,
+          onSearch: () {
+            Navigator.of(context).pushNamed("/search");
+          },
+        ),
+        backgroundColor: Colors.white,
       ),
       body: Container(
         child: Column(

@@ -80,4 +80,15 @@ flutter:
   - images/home_index_recommend_2.png
   - images/home_index_recommend_3.png
   - images/home_index_recommend_4.png
+  - images/icons/widget_search_bar_map.png
+
+  - images/home_profile_record.png
+  - images/home_profile_order.png
+  - images/home_profile_favor.png
+  - images/home_profile_id.png
+  - images/home_profile_message.png
+  - images/home_profile_contract.png
+  - images/home_profile_house.png
+  - images/home_profile_wallet.png
+  - images/loading.jpg
   

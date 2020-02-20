@@ -1,5 +1,6 @@
 //资讯
 import 'package:flutter/material.dart';
+import 'package:flutter_app02/commonality/common_input/index.dart';
 import 'package:flutter_app02/pages/index/member/home/info/index.dart';
 
 class ShoppingPage extends StatefulWidget {
@@ -14,7 +15,12 @@ class _ShoppingPageState extends State<ShoppingPage> {
   Widget build(BuildContext context) {
     return Scaffold(
         appBar: AppBar(
-          title: Text("资讯"),
+          title: ConmminInput(
+            onSearch: () {
+              Navigator.of(context).pushNamed("/search");
+            },
+          ),
+          backgroundColor: Colors.white,
         ),
         body: ListView(
           padding: EdgeInsets.only(top: 10),

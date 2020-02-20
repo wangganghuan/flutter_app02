@@ -1,3 +1,4 @@
+//搜索 数据
 class RoomListItemData {
   final String id;
   final String title;
@@ -18,24 +19,24 @@ const List<RoomListItemData> dataList = [
       1200,
       "rromDetail/1"),
   RoomListItemData(
-      "朝阳门南大街 2室1厅 8300元",
-      "二室/114/东|北/朝阳门南大街",
-      "https://tva1.sinaimg.cn/large/006y8mN6ly1g6wtu9t1kxj30lo0c7796.jpg",
-      ["近地铁", "集中供暖", "新上", "随时看房"],
+      "朝阳门南大街 2室1厅 8300元 朝阳门南大街 2室1厅 8300元",
+      "二室/114/东|北/朝阳门南大街 二室/114/东|北/朝阳门南大街",
+      "https://tva1.sinaimg.cn/large/006y8mN6ly1g6wtu5s7gcj30lo0c7myq.jpg",
+      ["新上", "集中供暖", "随时看房", "近地铁"],
       1200,
       "rromDetail/1"),
   RoomListItemData(
       "朝阳门南大街 2室1厅 8300元",
       "二室/114/东|北/朝阳门南大街",
       "https://tva1.sinaimg.cn/large/006y8mN6ly1g6wtu9t1kxj30lo0c7796.jpg",
-      ["近地铁", "集中供暖", "新上", "随时看房"],
+      ["新上", "集中供暖", "近地铁", "随时看房"],
       1200,
       "rromDetail/1"),
   RoomListItemData(
-      "朝阳门南大街 2室1厅 8300元",
-      "二室/114/东|北/朝阳门南大街",
-      "https://tva1.sinaimg.cn/large/006y8mN6ly1g6wtu9t1kxj30lo0c7796.jpg",
-      ["近地铁", "集中供暖", "新上", "随时看房"],
+      "朝阳门南大街 2室1厅 8300元 朝阳门南大街 2室1厅 8300元",
+      "二室/114/东|北/朝阳门南大街 二室/114/东|北/朝阳门南大街",
+      "https://tva1.sinaimg.cn/large/006y8mN6ly1g6wtu5s7gcj30lo0c7myq.jpg",
+      ["集中供暖", "近地铁", "随时看房", "新上"],
       1200,
-      "rromDetail/1")
+      "rromDetail/1"),
 ];

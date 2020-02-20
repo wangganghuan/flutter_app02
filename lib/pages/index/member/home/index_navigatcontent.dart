@@ -1,5 +1,4 @@
-//抽离方法
-//轮播图下面内容
+//首页----数据轮播图下面内容
 import 'package:flutter/material.dart';
 
 class IndexNavigatorItem {

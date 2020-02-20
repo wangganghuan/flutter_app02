@@ -1,5 +1,4 @@
-//房屋推荐
-//抽离方法内容
+//首页--房屋推荐--数据
 class IndexRecommondContent {
   final String title;
   final String gubTitle;

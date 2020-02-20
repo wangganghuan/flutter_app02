@@ -1,6 +1,7 @@
 //首页
 
 import 'package:flutter/material.dart';
+import 'package:flutter_app02/commonality/common_input/index.dart';
 import 'package:flutter_app02/pages/index/member/home/index_recommond.dart';
 import 'package:flutter_app02/pages/index/member/home/info/index.dart';
 import '../../commonality/commonality_slideshow.dart';
@@ -23,7 +24,14 @@ class _HomePageState extends State<HomePage> {
   Widget build(BuildContext context) {
     return Scaffold(
         appBar: AppBar(
-          title: Text("首页"),
+          title: ConmminInput(
+            showLoaction: true,
+            showMap: true,
+            onSearch: () {
+              Navigator.of(context).pushNamed("/log");
+            },
+          ),
+          backgroundColor: Colors.white,
         ),
         body: Container(
           child: ListView(

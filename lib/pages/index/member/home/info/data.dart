@@ -1,3 +1,4 @@
+//资讯--数据
 class InfoItem {
   final String title;
   final String imageUri;

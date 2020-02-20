@@ -1,4 +1,4 @@
-//房屋推荐内核
+//首页---房屋推荐--内容
 import 'package:flutter/material.dart';
 import 'package:flutter_app02/commonality/common_lmage.dart';
 import 'package:flutter_app02/pages/index/member/home/index_recommondcontent.dart';
