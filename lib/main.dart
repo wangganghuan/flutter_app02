@@ -18,6 +18,7 @@ class Application extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
+      initialRoute: "/roomadd",
       title: "百姓生活+",
       debugShowCheckedModeBanner: false,
       theme: ThemeData(primaryColor: Colors.green),

@@ -24,7 +24,9 @@ class _MemberPageState extends State<MemberPage> {
         title: Text("我的"),
         actions: <Widget>[
           IconButton(
-            onPressed: () {},
+            onPressed: () {
+              Navigator.pushNamed(context, "/setting");
+            },
             icon: Icon(Icons.settings),
           )
         ],

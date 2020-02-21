@@ -19,7 +19,7 @@ final List<FunctionButtonItem> gridList = [
   FunctionButtonItem("images/home_profile_house.png", "房屋管理", (context) {
     bool isLogin = true;
     if (isLogin) {
-      Navigator.pushNamed(context, "/log");
+      Navigator.pushNamed(context, "/buildingmanagement");
       return;
     }
     Navigator.pushNamed(context, "/log");

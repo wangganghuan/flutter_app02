@@ -1,8 +1,5 @@
 //固定写法
 //登陆
-
-import 'package:flutter_app02/pages/index/member/home/tenancy/rent_out.dart';
-
 import '../index/member/log.dart';
 //注册
 import '../index/member/register.dart';
@@ -14,6 +11,13 @@ import '../index/member/home/tenancy/joint_tenancy.dart';
 import '../index/member/home/tenancy/apartment_hunting.dart';
 //去出租
 import '../index/member/home/tenancy/rent_out.dart';
+//设置
+import 'package:flutter_app02/pages/index/member/mine/setting.dart';
+//房屋管理
+import 'package:flutter_app02/pages/index/member/mine/building_management/index.dart';
+//发布房源
+import 'package:flutter_app02/pages/index/member/mine/building_management/room_add.dart';
+
 import 'package:flutter/material.dart';
 
 final routes = {
@@ -29,6 +33,12 @@ final routes = {
   "/apartmenthunting": (context) => ApartmentHunting(),
   //去出租
   "/rentout": (context) => RentOut(),
+  //设置
+  "/setting": (context) => MineSetting(),
+  //房屋管理
+  "/buildingmanagement": (context) => BuildingManagementIndex(),
+  //发布房源
+  "/roomadd": (context) => RoomAdd(),
 };
 var onGenerateRoute = (RouteSettings settings) {
   final String name = settings.name;
