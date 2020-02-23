@@ -1,4 +1,5 @@
 //发布房源
+
 import 'dart:io';
 
 import 'package:flutter/material.dart';
@@ -8,6 +9,7 @@ import 'package:flutter_app02/commonality/common_input/issue/common_radio_formit
 import 'package:flutter_app02/commonality/common_input/issue/common_select_form_item.dart';
 import 'package:flutter_app02/commonality/common_input/issue/common_title.dart';
 import 'package:flutter_app02/commonality/common_input/issue/image_picker/common_image_picker.dart';
+import 'package:flutter_app02/pages/index/member/mine/building_management/room_appliance.dart';
 
 class RoomAdd extends StatefulWidget {
   RoomAdd({Key key}) : super(key: key);
@@ -27,11 +29,15 @@ class _RoomAddState extends State<RoomAdd> {
   int floor = 0;
   //朝向
   int oriented = 0;
+  //房屋标题
+  var titleController = TextEditingController();
+  //房屋描述
+  var descController = TextEditingController();
   @override
   Widget build(BuildContext context) {
     return Container(
       child: Scaffold(
-        floatingActionButtonLocation: FloatingActionButtonLocation.centerFloat,
+        floatingActionButtonLocation: FloatingActionButtonLocation.endFloat,
         floatingActionButton: CommonFloatButton("提交", () {}),
         appBar: AppBar(
           title: Text("发布房源"),
@@ -131,8 +137,28 @@ class _RoomAddState extends State<RoomAdd> {
               CommonTitle("房屋头像"),
               CommonImagePicker(onChange: (List<File> files) {}),
               CommonTitle("房屋标题"),
+              Container(
+                padding: EdgeInsets.only(left: 10, right: 10),
+                child: TextField(
+                  controller: titleController,
+                  decoration: InputDecoration(
+                      hintText: ("请输入标题(例如：整组，小区名 2室2000元)"),
+                      border: InputBorder.none),
+                ),
+              ),
               CommonTitle("房屋配置"),
-              CommonTitle("房屋描述")
+              RommAppliance(onChange: (data) {}),
+              CommonTitle("房屋描述"),
+              Container(
+                margin: EdgeInsets.only(bottom: 100),
+                padding: EdgeInsets.only(left: 10, right: 10),
+                child: TextField(
+                  controller: descController,
+                  maxLines: 10,
+                  decoration: InputDecoration(
+                      hintText: ("请输入房间描述"), border: InputBorder.none),
+                ),
+              ),
             ],
           ),
         ),

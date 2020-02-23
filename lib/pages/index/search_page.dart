@@ -20,24 +20,28 @@ class _SearchPageState extends State<SearchPage> {
           showLoaction: true,
           showMap: true,
           onSearch: () {
-            Navigator.of(context).pushNamed("/search");
+            Navigator.of(context).pushNamed("/log");
           },
         ),
         backgroundColor: Colors.white,
       ),
-      body: Container(
-        child: Column(
-          children: <Widget>[
-            Container(
-              child: Text("filterBar"),
-              height: 40,
-            ),
-            Expanded(
-              child: ListView(
-                children: dataList.map((item) => SearchContent(item)).toList(),
+      body: GestureDetector(
+        onTap: () {},
+        child: Container(
+          child: Column(
+            children: <Widget>[
+              Container(
+                child: Text("filterBar"),
+                height: 40,
               ),
-            )
-          ],
+              Expanded(
+                child: ListView(
+                  children:
+                      dataList.map((item) => SearchContent(item)).toList(),
+                ),
+              )
+            ],
+          ),
         ),
       ),
     );

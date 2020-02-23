@@ -17,7 +17,8 @@ import 'package:flutter_app02/pages/index/member/mine/setting.dart';
 import 'package:flutter_app02/pages/index/member/mine/building_management/index.dart';
 //发布房源
 import 'package:flutter_app02/pages/index/member/mine/building_management/room_add.dart';
-
+//搜索详情
+import 'package:flutter_app02/pages/index/member/search/roomDetail.dart';
 import 'package:flutter/material.dart';
 
 final routes = {
@@ -39,6 +40,8 @@ final routes = {
   "/buildingmanagement": (context) => BuildingManagementIndex(),
   //发布房源
   "/roomadd": (context) => RoomAdd(),
+  //搜索详情  传参
+  "/roomDetail": (context, {arguments}) => RoomDetail(arguments: arguments),
 };
 var onGenerateRoute = (RouteSettings settings) {
   final String name = settings.name;

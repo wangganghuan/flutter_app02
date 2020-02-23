@@ -28,6 +28,7 @@ class InfoComtent extends StatelessWidget {
                 data.imageUri,
                 width: 120,
                 height: 90.0,
+                fit: BoxFit.fill,
               ),
               padding: EdgeInsets.only(right: 10),
             ),
