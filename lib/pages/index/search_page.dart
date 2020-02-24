@@ -1,6 +1,8 @@
 //搜索
 import 'package:flutter/material.dart';
 import 'package:flutter_app02/commonality/common_input/index.dart';
+import 'package:flutter_app02/pages/index/member/search/filter/filter_drawer.dart';
+import 'package:flutter_app02/pages/index/member/search/filter/index.dart';
 import 'package:flutter_app02/pages/index/member/search/tab_search/content.dart';
 import 'package:flutter_app02/pages/index/member/search/tab_search/dataList.dart';
 
@@ -15,7 +17,11 @@ class _SearchPageState extends State<SearchPage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      //抽屉
+      endDrawer: FilterDrawer(),
       appBar: AppBar(
+        actions: <Widget>[Container()],
+        elevation: 0,
         title: ConmminInput(
           showLoaction: true,
           showMap: true,
@@ -31,7 +37,9 @@ class _SearchPageState extends State<SearchPage> {
           child: Column(
             children: <Widget>[
               Container(
-                child: Text("filterBar"),
+                child: FilterBar(
+                  onChange: (data) {},
+                ),
                 height: 40,
               ),
               Expanded(
